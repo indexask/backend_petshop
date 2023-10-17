@@ -9,16 +9,16 @@ const port = 5432 || 3000
 app.use(express.json())
 
 const corsOptions = {
-  origin: "https://652e25cfbb5e1044e580c608--earnest-lily-3d69bf.netlify.app/",
+  origin: "http://localhost:5173",
   credentials: true,
 }
-app.use(cors(corsOptions))
+app.use(cors())
 
 app.use(
   "/",
   router,
   cors({
-    origin: "https://652e25cfbb5e1044e580c608--earnest-lily-3d69bf.netlify.app/",
+    origin: "http://localhost:5173",
     credentials: true,
   })
 )
