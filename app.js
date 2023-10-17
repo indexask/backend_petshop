@@ -4,12 +4,12 @@ const cors = require("cors")
 
 const app = express()
 
-const port = process.env.PORT || 3000
+const port = 5432 || 3000
 
 app.use(express.json())
 
 const corsOptions = {
-  origin: "https://petshop-hy6s.onrender.com",
+  origin: "https://652e25cfbb5e1044e580c608--earnest-lily-3d69bf.netlify.app/",
   credentials: true,
 }
 app.use(cors(corsOptions))
@@ -18,7 +18,7 @@ app.use(
   "/",
   router,
   cors({
-    origin: "https://petshop-hy6s.onrender.com",
+    origin: "https://652e25cfbb5e1044e580c608--earnest-lily-3d69bf.netlify.app/",
     credentials: true,
   })
 )
