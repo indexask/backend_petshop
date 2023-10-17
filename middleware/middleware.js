@@ -22,7 +22,7 @@ const tokenVerification = (req, res, next) => {
   const token = authorizationHeader.split("Bearer ")[1]
 
   try {
-    const validToken = jwt.verify(token, process.env.SECRET)
+    const validToken = jwt.verify(token, mysecret)
     if (validToken) {
       next()
     } else {

@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000
 app.use(express.json())
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://petshop-hy6s.onrender.com",
   credentials: true,
 }
 app.use(cors(corsOptions))
@@ -18,7 +18,7 @@ app.use(
   "/",
   router,
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://petshop-hy6s.onrender.com",
     credentials: true,
   })
 )

@@ -60,7 +60,7 @@ router.post("/login", async (req, res) => {
     const { email, password } = req.body
     const userId = await verifyUser(email, password)
 
-    const token = jwt.sign({ email, user_id: userId }, process.env.SECRET)
+    const token = jwt.sign({ email, user_id: userId }, mysecret)
 
     res.json({ email, token, user_id: userId })
   } catch (error) {
