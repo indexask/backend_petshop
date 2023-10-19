@@ -9,6 +9,7 @@ const pool = new Pool({
   port:5432,
   secret: 'mysecret',
   allowExitOnIdle: true,
+  sll: true,
 })
 
 module.exports = pool

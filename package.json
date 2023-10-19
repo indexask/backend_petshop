@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "miau&guau",
@@ -22,5 +23,8 @@
     "nodemon": "^3.0.1",
     "pg": "^8.11.3",
     "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
   }
 }
